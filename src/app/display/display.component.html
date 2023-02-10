@@ -1,0 +1,23 @@
+<div>
+    <div *ngFor="let data of getdetails;">
+        <h3 align="center">Form Details</h3>
+        <div class="display">
+            <div class="details">
+                <span><span>firstname : </span><span>{{data.firstname}}</span></span>
+                <span><span>lastname : </span><span>{{data.lastname}}</span></span>
+                <span><span>age : </span><span>{{data.age}}</span></span>
+                <span><span>username : </span><span>{{data.username}}</span></span>
+                <!-- <span><span>lastname : </span><span>{{data.lastname}}</span></span> -->
+                <span><span>email : </span><span>{{data.email}}</span></span>
+                <span><span>phonenumber : </span><span>{{data.phonenumber}}</span></span>
+            </div>
+            <div class="additionaldata">
+                <!-- <div align="end"><button (click)="activateInput($event)">+</button></div> -->
+                <span ><span> {{data.additionaldata}} : </span><span>{{data.additionaldataInfo}}</span></span>
+                <!-- <div *ngIf="activate?true:false"><input type="text" (input)="getInput($event)"><button (click)="addData()">add</button></div> -->
+                
+            </div>
+
+        </div>
+    </div>
+</div>
